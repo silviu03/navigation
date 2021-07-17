@@ -1,0 +1,425 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+header {
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+main {
+    display: flex;
+}
+
+.left-meniu-wrapper {
+    width: 25%;
+    height: 100vh;
+    font-size: 16px;
+    background-color: rgb(235, 228, 228);
+}
+
+.left-meniu-wrapper > div{
+    margin-left: 8em;
+    margin-top: 14em;
+}
+.left-meniu-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+.left-meniu-box span {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+.left-meniu-title {
+    position: absolute;
+    text-transform: uppercase;
+    top: 70px;
+    left: 50px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    display: none;
+}
+.logo-icon {
+    width: 7em;
+    height: 7em;
+    margin-bottom: 3em;
+}
+.logo-icon img {
+    width: 100%;
+}
+.member-wrapper,
+.elite-wrapper,
+.gold-wrapper {
+    display: none;
+}
+section {
+    width: 75%;
+    height: 100vh;
+    position: relative;
+    font-size: 16px;
+    background-color: rgb(247, 245, 245);
+}
+.orders-box,
+.order-details-box,
+.rewards-box,
+.account-box,
+.payment-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 5em;
+}
+
+
+.orders-box {
+    z-index: 5;
+    margin-top: 14em;
+}
+.order-details-box {
+    z-index: 4;
+}
+.rewards-box {
+    z-index: 3;
+}
+.account-box{
+    z-index: 2;
+}
+.payment-box {
+    z-index: 1;
+}
+
+
+/* ------------------order-box part 1------------------ */
+
+
+.orders-box h1 {
+    font-size: 3em;
+    width: 3em;
+}
+.orders-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.product-wrapper {
+    width: 20em;
+    height: 22em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 228, 228);
+    margin-right: 25px;
+}
+.product-wrapper img {
+    width: 90%;
+}
+.orders-wrapper > div:last-child {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.order-info {
+    display: flex;
+    justify-content: space-between;
+}
+.order-info > div span {
+    display: block;
+    margin-bottom: 1em;
+}
+.order-info > div span:nth-child(2n) {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.multiple-products-wrapper {
+    display: flex;
+    margin-top: 1em;
+}
+.multiple-products-wrapper > div {
+    width: 5em;
+    height: 5em;
+    background-color: rgb(235, 228, 228);
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.multiple-products-wrapper > div img {
+    width: 90%;
+}
+
+
+/* ------------------order-details part 2------------------ */
+
+.order-details-box {
+    font-size: 16px;
+}
+.order-details-box > span {
+    font-weight: bold;
+}
+
+.order-details-header {
+    margin-bottom: 4em;
+}
+.order-details-header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1em;
+}
+.order-details-header nav > * {
+    margin-left: 2em;
+    margin-right: 4em;
+}
+.order-details-header a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.order-details-header div {
+    width: 30px;
+    height: 30px;
+}
+.order-details-header div img {
+    width: 100%;
+}
+.order-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 75%;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.order-title > span:first-child {
+    font-size: 3em;
+    font-weight: bold;
+    width: 3em;
+}
+.order-title > span:last-child {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 4em;
+}
+.order-status {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.order-status > * {
+    width: 33%;
+    margin-bottom: 3em;
+}
+.order-status span {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+
+/* -----------------rewards-status part 3------------------ */
+
+.rewards-title {
+    font-size: 3em;
+    font-weight: bold;
+    width: 4em;
+    margin-bottom: 1em;
+}
+.rewards-status {
+    display: flex;
+    width: 75%;
+}
+.rewards-status > div:first-child {
+    width: 50%;
+}
+.rewards-status span {
+    font-weight: bold;
+}
+
+.reward-box-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.reward-box-info > * {
+    width: 50%;
+    margin-bottom: 2em;
+}
+.reward-box-info span {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.rewards-box > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.benefits-icons-box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.recurrent-wrapper,
+.savings-wrapper {
+    width: 80px;
+    height: 80px;
+}
+.recurrent-wrapper img,
+.savings-wrapper img {
+    width: 100%;
+}
+.benefits-icons-wrapper span {
+    font-weight: bold;
+}
+
+
+/* -----------------account-settings part 4------------------ */
+
+.account-box {
+    font-size: 16px;
+}
+.account-box span {
+    font-weight: bold;
+}
+.account-title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 3em;
+    width: 4em;
+    display: block;
+}
+.account-input {
+    width: 75%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.account-input > * {
+    width: 50%;
+    margin-bottom: 1em;
+}
+.account-input > div input {
+    width: 90%;
+    height: 40px;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(194, 189, 189);
+    padding-left: 10px;
+    font-weight: bold;
+}
+.account-input > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 46%;
+}
+.account-input > div:last-child a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 1px 15px 1px;
+}
+.address-info {
+    margin-top: 1em;
+    display: flex;
+    width: 75%;
+}
+.address-info > div {
+    width: 48%;
+    background-color: black;
+    color: #fff;
+    margin-right: 2em;
+    padding: 35px 0 15px 15px;
+    border-radius: 25px;
+}
+.address-info > div span {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+
+/* -----------------payment-methods part 5------------------ */
+
+.payment-box {
+    font-size: 16px;
+}
+.payment-box > span {
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.2em;
+}
+.card-box {
+    width: 75%;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+.card-box > div {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.card-box > div img {
+    width: 100%;
+}
+.inco-plus-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.inco-plus-wrapper img {
+    width: 90%;
+}
+.card-box > div:last-child {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(235, 228, 228);
+    
+}
+
+/* <-------------------respossive part with js----------------> */
+
+
+.hidden {
+    display: none;
+}
+.selected { 
+    font-size: 1.1em;
+    color: rgb(248, 7, 7) !important;
+    
+}
+.menu-item:hover {
+    cursor: pointer;
+}
