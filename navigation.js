@@ -50,11 +50,12 @@ document.addEventListener("DOMContentLoaded", function (ev) {
 
     const loaderOverlay = document.getElementById('loaderOverlay');
     const modalOverlay = document.getElementById('modalOverlay');
-    const accountInfoData = document.getElementById('accountInfoData');
-    console.log(accountInfoData);
+    const inputSubmit = document.getElementById('inputSubmit');
+    const inputForm = document.getElementById('input-form');
+    console.log(inputForm);
 
-    accountInfoData.addEventListener('submit', function(eventAccountInfo) {
-        console.log('wtf!!')
+    inputForm.addEventListener('submit', function(eventAccountInfo) {
+    
         eventAccountInfo.preventDefault();
         loaderOverlay.classList.remove('hidden');
         console.log('wtf')
@@ -63,9 +64,9 @@ document.addEventListener("DOMContentLoaded", function (ev) {
             loaderOverlay.classList.add('hidden');
             modalOverlay.classList.remove('hidden');
 
-            setTimeout(function() {
-                modalOverlay.classList.add('hidden');
-            }, 4000);
+            // setTimeout(function() {
+            //     modalOverlay.classList.add('hidden');
+            // }, 4000);
         }, 4000);
 
     })
