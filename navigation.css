@@ -35,7 +35,7 @@ main {
     text-decoration: none;
     color: inherit;
 }
-.left-meniu-box span {
+.left-meniu-box a {
     display: block;
     margin-bottom: 1em;
     font-weight: bold;
