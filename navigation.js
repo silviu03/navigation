@@ -9,7 +9,7 @@ $(function () {
         navPages.addClass('hidden');
     })
 
-    $('.item1').click(function () {
+    meniuItems.click(function () {
         $('.orders-box').removeClass('hidden');
         $('.order-details-box').addClass('hidden');
        
